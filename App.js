@@ -1,6 +1,7 @@
 import React from 'react';
 import {SafeAreaView, StyleSheet, View, Text, ScrollView} from 'react-native';
 import TodoInsert from './components/TodoInsert';
+import TodoList from './components/TodoList';
 
 const App = () => {
   return (
@@ -8,11 +9,7 @@ const App = () => {
       <Text style={styles.appTitle}>Hello Todolist</Text>
       <View style={styles.card}>
         <TodoInsert />
-        <ScrollView>
-          <View>
-            <Text>TodoList</Text>
-          </View>
-        </ScrollView>
+        <TodoList />
       </View>
     </SafeAreaView>
   );
